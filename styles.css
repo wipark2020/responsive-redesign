@@ -168,13 +168,7 @@ body {
     min-width: 50px;
 }
 
-.player-name-and-ovr {
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-}
-
-.player-rating-and-ovr {
+.player-name-and-ovr, .player-rating-and-ovr {
     display: flex;
     justify-content: space-between; 
     align-items: center;
@@ -182,8 +176,6 @@ body {
 
 @media (max-width: 480px) {
     .header, .search-container, .player-list, .player-card {
-        flex-direction: row;
-        justify-content: center;
         align-items: center;
     }
     .sort-section {
@@ -191,18 +183,18 @@ body {
         justify-content: center;
     }
 
-    .sort-by, .search-title, .player-title {
+    .sort-by {
         margin-right: 10px; 
+        font-size: 10px;
     }
     .player-info {
         width: 100%; 
         box-sizing: border-box;
     }
-    .player-stats {
-        flex-direction: row;
-        justify-content: space-around;
-        width: 100%; 
-        padding: 10px;
-        box-sizing: border-box;
+    .player-name-and-ovr, .player-rating-and-ovr {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+        font-size: 10px;
     }
 }
