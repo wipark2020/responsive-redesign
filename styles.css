@@ -197,4 +197,17 @@ body {
         align-items: center;
         font-size: 10px;
     }
+
+    .player-ovr {
+        margin-right: 0px;
+        text-align: center;
+        min-width: 50px;
+        font-size:10px;
+    }
+    .player-rating {
+        margin-right: 0px;
+        text-align: center;
+        min-width: 50px;
+        font-size:10px;
+    }
 }
