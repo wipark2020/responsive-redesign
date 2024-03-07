@@ -180,8 +180,29 @@ body {
     align-items: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 480px) {
     .header, .search-container, .player-list, .player-card {
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
+    }
+    .sort-section {
+        flex-wrap: nowrap;
+        justify-content: center;
+    }
+
+    .sort-by, .search-title, .player-title {
+        margin-right: 10px; 
+    }
+    .player-info {
+        width: 100%; 
+        box-sizing: border-box;
+    }
+    .player-stats {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 100%; 
+        padding: 10px;
+        box-sizing: border-box;
     }
 }
